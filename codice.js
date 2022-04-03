@@ -25,5 +25,5 @@ function PariDispari(numero)
     }
 }
 
-let risultato=PariDispari(21);
+let risultato=PariDispari(2);
 console.log ("il numero è" + " " + risultato );
