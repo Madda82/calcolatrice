@@ -1,42 +1,48 @@
 <html>
-    <head>
-        <title>La mia prima calcolatrice</title>
-<link rel="stylesheet" href="stile.css"
-    </head>
-    <body>
-        <div class="display">   
-        <p id="output">0</p>
-    </div>  
-        <div class="second-row">
-            <button>C</button>
-            <button>%</button>
-            <button>/</button>
-         </div>
-         <div class="second-row">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>X</button>
-         </div>
-         <div class="third-row">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-         </div>
-         <div class="fourth-row">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-         </div>
-         <div class="fifth-row">
-           <button>0</button>
-           <button>.</button>
-           <button>=</button>
-         </div>
-         <script type="text/javascript" src="codice.js"></script>
-         
-    </body>
-</html>
 
+<head>
+    <title>La mia calcolatrice</title>
+    <link rel="stylesheet" href="./stile.css">
+</head>
+
+<body>
+    <div>
+        <table class="calc">
+            <tr>
+                <td colspan="4"><input id="risultato" type="text" class="display" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="9" class="button" onclick="mostra(9)"></td>
+                <td><input type="button" value="8" class="button" onclick="mostra(8)" ></td>
+                <td><input type="button" value="7" class="button" onclick="mostra(7)"></td>
+                <td><input type="button" value="/" class="button1" onclick="mostra('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="6" class="button" onclick="mostra(6)"></td>
+                <td><input type="button" value="5" class="button" onclick="mostra(5)"></td>
+                <td><input type="button" value="4" class="button" onclick="mostra(4)"></td>
+                <td><input type="button" value="x" class="button1" onclick="mostra('x')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="3" class="button" onclick="mostra(3)"></td>
+                <td><input type="button" value="2" class="button" onclick="mostra(2)"></td>
+                <td><input type="button" value="1" class="button" onclick="mostra(1)"></td>
+                <td><input type="button" value="-" class="button1" onclick="mostra('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="," class="button" onclick="mostra(',')"></td>
+                <td><input type="button" value="0" class="button" onclick="mostra(0)"></td>
+                <td><input type="button" value="C" class="button" onclick="mostra('C')"></td>
+                <td><input type="button" value="+" class="button1" onclick="mostra('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="%" class="button1" onclick="mostra('%')"></td>
+                <td><input type="button" value="+/-" class="button1" onclick="mostra('+/-')"></td>
+                <td colspan="2"><input type="button" value="=" class="button1" onclick="mostra('=')"></td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="./codice.js"></script>
+</body>
+
+</html>

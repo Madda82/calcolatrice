@@ -1,19 +1,18 @@
 .display {
-    background-color: rgb(172, 209, 218);
+    background-color: rgb(170, 175, 177);
     padding: 2px;
-    width: 280px;
+    width: 300px;
     text-align: right;
     font-size: 35px;
-    color: white;
+    color: rgb(245, 244, 250);
     font-family: 'Courier New', Courier, monospace;
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
+ 
 }
 
-button{
+.button{
     width: 65;
-    height: 60;
-    font-size: 25;
+    height: 45;
+    font-size: 20;
     margin: 2;
     cursor: pointer;
     border: none;
@@ -22,15 +21,31 @@ button{
     font-family: 'Courier New', Courier, monospace;
 }
 
-button:hover {
+.button:hover {
     cursor: pointer;
     background-color: rgb(165, 171, 182);
    }
 
-   button:active {
+ .button:active {
     background-color: rgb(60, 114, 145);
    }
 
-   .display{
-    background-color:rgb(55, 122, 148) ;
-   }
+.button1 {
+width: 65;
+height: 45;
+font-size: 20;
+margin: 2;
+cursor: pointer;
+border: none;
+color: white;
+background: #576064;
+font-family: 'Courier New', Courier, monospace;
+}
+ 
+
+  /* .bottoneNum {
+    width:70px;
+    height:60px;
+    background-color:rgb(55, 122, 148);
+    text-decoration: aliceblue;
+}*/
