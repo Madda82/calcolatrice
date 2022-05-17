@@ -12,35 +12,42 @@
                 <td colspan="4"><input id="risultato" type="text" class="display" readonly></td>
             </tr>
             <tr>
-                <td><input type="button" value="9" class="button" onclick="mostra(9)"></td>
-                <td><input type="button" value="8" class="button" onclick="mostra(8)" ></td>
-                <td><input type="button" value="7" class="button" onclick="mostra(7)"></td>
-                <td><input type="button" value="/" class="button1" onclick="mostra('/')"></td>
+                <td><input type="button" id="tasto9" value="9" id="tasto9" class="button" onclick="input(9)" ></td>
+                <td><input type="button" id="tasto8" value="8" id="tasto8"class="button" onclick="input(8)" ></td>
+                <td><input type="button" id="tasto7" value="7" class="button" onclick="input(7)"></td>
+                <td><input type="button" value="/" class="button1" onclick="input('/')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="6" class="button" onclick="mostra(6)"></td>
-                <td><input type="button" value="5" class="button" onclick="mostra(5)"></td>
-                <td><input type="button" value="4" class="button" onclick="mostra(4)"></td>
-                <td><input type="button" value="x" class="button1" onclick="mostra('x')"></td>
+                <td><input type="button" id="tasto6" value="6" class="button" onclick="input(6)"></td>
+                <td><input type="button" id="tasto5" value="5" class="button" onclick="input(5)"></td>
+                <td><input type="button" id="tasto4" value="4" class="button" onclick="input(4)"></td>
+                <td><input type="button" value="x" class="button1" onclick="input('x')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="3" class="button" onclick="mostra(3)"></td>
-                <td><input type="button" value="2" class="button" onclick="mostra(2)"></td>
-                <td><input type="button" value="1" class="button" onclick="mostra(1)"></td>
-                <td><input type="button" value="-" class="button1" onclick="mostra('-')"></td>
+                <td><input type="button" id="tasto3" value="3" class="button" onclick="input(3)"></td>
+                <td><input type="button" id="tasto2" value="2" class="button" onclick="input(2)"></td>
+                <td><input type="button" id="tasto1" value="1" class="button" onclick="input(1)"></td>
+                <td><input type="button" value="-" class="button1" onclick="input('-')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="," class="button" onclick="mostra(',')"></td>
-                <td><input type="button" value="0" class="button" onclick="mostra(0)"></td>
-                <td><input type="button" value="C" class="button" onclick="mostra('C')"></td>
-                <td><input type="button" value="+" class="button1" onclick="mostra('+')"></td>
+                <td><input type="button" value="," class="button" onclick="input('.')"></td>
+                <td><input type="button" value="0" class="button" onclick="input(0)"></td>
+                <td><input type="button" value="C" class="button" onclick="input('C')"></td>
+                <td><input type="button" id="addizione" value="+" class="button1" onclick="input('+')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="%" class="button1" onclick="mostra('%')"></td>
-                <td><input type="button" value="+/-" class="button1" onclick="mostra('+/-')"></td>
-                <td colspan="2"><input type="button" value="=" class="button1" onclick="mostra('=')"></td>
+                <td><input type="button" value="%" class="button1" onclick="input('%')"></td>
+                <td><input type="button" value="+/-" class="button1" onclick="input('+/-')"></td>
+                <td colspan="2"><input type="button" value="=" class="button1" onclick="input('=')"></td>
             </tr>
         </table>
+        </div>
+        <div>
+        <!--      
+         <input type="text" id="myInput" name="myInput">
+         <input type="button" id="mybutton" name="mybutton" onclick="btOnClick('myInput', 'myOutput')">
+         <input type="text" id="myOutput" name="myOutput">
+-->
     </div>
     <script type="text/javascript" src="./codice.js"></script>
 </body>
